@@ -8,13 +8,13 @@ class Plant:
             print(f"{self._name}: Error, height can't be negative")
             self._height: float = 0.0
         else:
-            self._height: float = height
+            self._height = height
             
         if age < 0:
             print(f"{self._name}: Error, age can't be negative")
             self._age: int = 0
         else:
-            self._age: int = age
+            self._age = age
 
     def get_height(self) -> float:
         return self._height

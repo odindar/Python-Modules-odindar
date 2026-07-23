@@ -125,4 +125,4 @@ if __name__ == "__main__":
     print("\n=== Anonymous ===")
     anon: Plant = Plant.create_anonymous()
     anon.show()
-    display_plant_stats(anon)
+    display_plant_stats(anon) 
