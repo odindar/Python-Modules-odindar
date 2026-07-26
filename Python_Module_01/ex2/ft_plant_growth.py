@@ -24,8 +24,8 @@ if __name__ == "__main__":
 
     for day in range(1, 8):
         print(f"=== Day {day} ===")
-        my_rose.grow(0.8)
-        my_rose.age(1)
+        my_rose.grow(1.5)
+        my_rose.age(5)
         my_rose.show()
     
     growth_amount: float = round(my_rose.height - start_height, 1)

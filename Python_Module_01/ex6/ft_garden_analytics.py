@@ -94,7 +94,7 @@ if __name__ == "__main__":
     print(f"Is 30 days more than a year? -> {Plant.is_older_than_a_year(30)}")
     print(f"Is 400 days more than a year? -> {Plant.is_older_than_a_year(400)}")
 
-    print("\n=== Flower ===")
+    print("\n=== Flower")
     rose: Flower = Flower("Rose", 15.0, 10, "red")
     rose.show()
     display_plant_stats(rose)
@@ -105,14 +105,14 @@ if __name__ == "__main__":
     rose.show()
     display_plant_stats(rose)
 
-    print("\n=== Tree ===")
+    print("\n=== Tree")
     oak: Tree = Tree("Oak", 200.0, 365, 5.0)
     display_plant_stats(oak)
     print("[asking the oak to produce shade]")
     oak.produce_shade()
     display_plant_stats(oak)
 
-    print("\n=== Seed ===")
+    print("\n=== Seed")
     sunflower: Seed = Seed("Sunflower", 80.0, 45, "yellow")
     sunflower.show()
     print("[make sunflower grow, age and bloom]")
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     sunflower.show()
     display_plant_stats(sunflower)
 
-    print("\n=== Anonymous ===")
+    print("\n=== Anonymous")
     anon: Plant = Plant.create_anonymous()
     anon.show()
     display_plant_stats(anon) 

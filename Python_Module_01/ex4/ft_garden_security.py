@@ -39,18 +39,21 @@ class Plant:
 
 if __name__ == "__main__":
     print("=== Garden Security System ===")
+
     safe_plant: Plant = Plant("Rose", 15.0, 10)
     print("Plant created: ", end="")
     safe_plant.show()
+    print()
 
     print("Height updated: 25cm")
     safe_plant.set_height(25.0)
-    
     print("Age updated: 30 days")
     safe_plant.set_age(30)
-    
+    print()
+
     safe_plant.set_height(-5.0)
     safe_plant.set_age(-10)
+    print()
     
     print("Current state: ", end="")
     safe_plant.show()
