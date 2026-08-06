@@ -17,7 +17,7 @@ def test_temperature() -> None:
     print(f"Input data is '{invalid_input}'")
     
     try:
-        temp = input_temperature(invalid_input)
+        temp: int = input_temperature(invalid_input)
         print(f"Temperature is now {temp}°C")
     except Exception as e:
         print(f"Caught input_temperature error: {e}\n")
