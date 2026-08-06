@@ -7,12 +7,13 @@ def garden_operations(operation_number: int) -> None:
     elif operation_number == 2:
         open("/non/existent/file", "r")
     elif operation_number == 3:
-        "string" + 5
+        "" + 1
     return None
+
 
 def test_error_types() -> None:
     print("=== Garden Error Types Demo ===")
-    
+
     for i in range(5):
         print(f"Testing operation {i}...")
         try:
@@ -26,8 +27,9 @@ def test_error_types() -> None:
             print(f"Caught FileNotFoundError: {e}")
         except TypeError as e:
             print(f"Caught TypeError: {e}")
-            
+
     print("\nAll error types tested successfully!")
+
 
 if __name__ == "__main__":
     test_error_types()

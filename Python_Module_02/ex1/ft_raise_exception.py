@@ -1,3 +1,4 @@
+
 def input_temperature(temp_str: str) -> int:
     temp: int = int(temp_str)
     if temp > 40:
@@ -6,11 +7,12 @@ def input_temperature(temp_str: str) -> int:
         raise Exception(f"{temp}°C is too cold for plants (min 0°C)")
     return temp
 
+
 def test_temperature() -> None:
     print("=== Garden Temperature Checker ===\n")
-    
-    test_values: list[str, str, str, str] = ["25", "abc", "100", "-50"]
-    
+
+    test_values: list[str] = ["25", "abc", "100", "-50"]
+
     for val in test_values:
         print(f"Input data is '{val}'")
         try:
@@ -18,8 +20,9 @@ def test_temperature() -> None:
             print(f"Temperature is now {temp}°C\n")
         except Exception as e:
             print(f"Caught input_temperature error: {e}\n")
-            
+
     print("All tests completed program didn't crash!")
+
 
 if __name__ == "__main__":
     test_temperature()
