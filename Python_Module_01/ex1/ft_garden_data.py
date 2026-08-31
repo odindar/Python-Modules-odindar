@@ -7,7 +7,9 @@ class Plant:
         self.age: int = age
 
     def show(self) -> None:
-        print(f"{self.name.capitalize()}: {self.height}cm, {self.age} days old")
+        print
+        (f"{self.name.capitalize()}: {self.height}cm, {self.age} days old")
+
 
 if __name__ == "__main__":
     print("=== Garden Plant Registry ===")
