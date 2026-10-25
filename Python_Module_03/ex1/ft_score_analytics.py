@@ -15,7 +15,7 @@ def main() -> None:
     if not scores:
         print(
             "No scores provided. Usage: "
-            f"python3 {sys.argv[0]} <score1> <score2>"
+            f"python3 {sys.argv[0]} <score1> <score2> ..."
         )
         return
 
